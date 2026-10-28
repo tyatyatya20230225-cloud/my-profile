@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY PROFILE</title>
+    <link rel="stylesheet" href="script.css" />
+    <script src="style.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#home" class="logo">MY PROFILE<span>.</span></a>
+
+      <nav>
+        <a href="#about">ABOUT</a>
+        <a href="#favorites">FAVORITES</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <p class="eyebrow">WELCOME TO MY WORLD</p>
+          <h1>MY<br /><span>PROFILE.</span></h1>
+          <p class="hero-description">Welcome to my personal website.</p>
+          <a href="#about" class="button">DISCOVER MORE ↘</a>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="images/profile.jpg"
+            alt="プロフィール写真"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'flex';
+            "
+          />
+        </div>
+      </section>
+
+      <section class="section about reveal" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">01 — ABOUT ME</p>
+          <h2>WHO <span>AM I?</span></h2>
+        </div>
+
+        <div class="about-content">
+          <div class="about-label">INTRODUCTION</div>
+
+          <div class="about-text">
+            <h3>はじめまして。</h3>
+            <p>黒木　泰翔</p>
+            <p>2007年11月6日生まれ。宮崎県出身。</p>
+
+            <div class="profile-details">
+              <div>
+                <span>NAME</span>
+                <p>黒木　泰翔（クロギ　タイト）</p>
+              </div>
+              <div>
+                <span>HOBBY</span>
+                <p>運動・ゲーム</p>
+              </div>
+              <div>
+                <span>PERSONALITY</span>
+                <p>すんごく優しい</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section favorites reveal" id="favorites">
+        <div class="section-heading">
+          <p class="eyebrow">02 — MY FAVORITES</p>
+          <h2>THINGS <span>I LOVE.</span></h2>
+          <p class="section-description">
+            My favorite things, all in one place.
+          </p>
+        </div>
+
+        <div class="favorite-grid">
+          <article class="favorite-card">
+            <span class="card-number">01</span>
+            <p class="card-category">HOBBY</p>
+            <h3>HOBBIES</h3>
+            <p>バスケ・ゲーム・筋トレ・カラオケ</p>
+            <span class="card-symbol">↗</span>
+          </article>
+
+          <div class="favorite-card">
+            <p class="card-category">MUSIC</p>
+
+            ```
+            <h3>Favorite Music</h3>
+
+            <p>エンドロール/川崎鷹也</p>
+
+            <a
+              href="https://open.spotify.com/intl-ja/track/5KaXhQSKIS0fQFBKYqNTGG?si=497c63cd01c24cdb"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="spotify-link"
+            >
+              ▶ LISTEN ON SPOTIFY
+            </a>
+            ```
+          </div>
+
+          <article class="favorite-card">
+            <span class="card-number">03</span>
+            <p class="card-category">ANIME</p>
+            <h3>ANIME</h3>
+            <p>進撃の巨人・転スラ・黄泉のツガイなどなど…</p>
+            <span class="card-symbol">✳</span>
+          </article>
+
+          <article class="favorite-card">
+            <span class="card-number">04</span>
+            <p class="card-category">GAMES</p>
+            <h3>GAMES</h3>
+            <p>ブロスタ・ポケモンGO・ポケモンのゲーム全部・スプラ</p>
+            <span class="card-symbol">⌘</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact reveal" id="contact">
+        <p class="eyebrow">03 — THANK YOU</p>
+        <h2>THANK <span>YOU.</span></h2>
+        <p>最後まで見てくれてありがとう！</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="#home" class="logo">MY PROFILE<span>.</span></a>
+      <p>© 2026 MY PROFILE</p>
+      <a href="#home">BACK TO TOP ↑</a>
+    </footer>
+  </body>
+</html>
